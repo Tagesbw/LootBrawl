@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyLootWars — Персонажи</title>
+  <!-- Подключаем глобальные стили -->
+  <link rel="stylesheet" href="common.css">
+  <!-- Здесь можно подключить и отдельный CSS для персонажей, если понадобится -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Персонажи</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="characters.html">Персонажи</a></li>
+        <li><a href="#">Мини-игры</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">О проекте</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="characters">
+      <!-- Карточка Оборотня -->
+      <div class="character-card">
+        <img src="player/oboroten.png" alt="Оборотень">
+        <h2>Оборотень</h2>
+        <p>Способность: Обращение</p>
+        <button>Купить</button>
+      </div>
+      <!-- Карточка Вампира -->
+      <div class="character-card">
+        <img src="player/vampire.png" alt="Вампир">
+        <h2>Вампир</h2>
+        <p>Способность: Перевоплощение</p>
+        <button>Купить</button>
+      </div>
+      <!-- Карточка Пугало -->
+      <div class="character-card">
+        <img src="player/pugalo.png" alt="Пугало">
+        <h2>Пугало</h2>
+        <p>Способность: Отпугнуть</p>
+        <button>Купить</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MyLootWars Project</p>
+  </footer>
+
+  <!-- Модальное окно для персонажа "Оборотень" -->
+  <div id="modal-oboroten" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <!-- Иконка персонажа в модальном окне -->
+      <img src="player/oboroten.png" alt="Оборотень" class="modal-img">
+      <h2>Оборотень</h2>
+      <p><strong>Способность:</strong> Обращение</p>
+      <label for="level">Выберите уровень: <span id="level-value">1</span></label>
+      <input type="range" id="level" min="1" max="20" value="1">
+      <p>🔹 <strong>Тратит маны в сек:</strong> <span id="mana-use">6</span></p>
+      <p>🔹 <strong>Уровень способности:</strong> <span id="skill-level">1</span></p>
+    </div>
+  </div>
+
+  <!-- Подключение JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
