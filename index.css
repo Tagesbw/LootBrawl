@@ -19,7 +19,7 @@
 .hero-content h2 {
   font-size: 2.4rem;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #ffcc00;
   text-align: center;
 }
 
@@ -40,7 +40,7 @@
   transform: scale(1.05);
 }
 
-/* Повороты для изображений */
+/* Поворот для изображений */
 .rotate-left {
   transform: rotate(-5deg);
   float: left;
@@ -58,10 +58,10 @@
   display: block;
   float: none;
   margin: 30px auto;
-  width: 250px; /* Или подберите подходящий размер */
+  width: 250px; /* Здесь можно подстроить размер по желанию */
 }
 
-/* После последнего абзаца сбрасываем обтекание */
+/* Сброс обтекания после последнего абзаца */
 .hero-content p:last-of-type {
   clear: both;
 }
